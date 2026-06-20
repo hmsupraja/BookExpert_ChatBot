@@ -1,0 +1,145 @@
+# 📄 Document Q&A Bot using RAG
+
+## 📌 Project Overview
+
+This project is a simple Document Question Answering (Q&A) system built using Retrieval-Augmented Generation (RAG). It allows users to ask questions based on the contents of a PDF document. The application retrieves relevant information from the document and displays the answer through a simple Streamlit interface.
+
+---
+
+## 🚀 Features Implemented
+
+- ✅ PDF document processing
+- ✅ Text extraction from PDF files
+- ✅ Chunking and storing document data in ChromaDB
+- ✅ Semantic similarity search
+- ✅ Question answering through command line
+- ✅ Streamlit-based user interface
+- ⏳ Gemini-powered answer generation (In Progress)
+- ⏳ Source citations (Future Enhancement)
+- ⏳ Multi-document support (Future Enhancement)
+
+---
+
+## 🛠️ Technologies Used
+
+- Python 3.11
+- Streamlit
+- ChromaDB
+- PyPDF
+- Google Gemini API
+- python-dotenv
+
+---
+
+## 📂 Project Structure
+
+```
+document-qa-bot/
+│
+├── data/
+│   └── sample.pdf
+│
+├── db/
+│
+├── .env
+├── .gitignore
+├── app.py
+├── ingest.py
+├── query.py
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## ⚙️ Setup Instructions
+
+### Clone Repository
+
+```bash
+git clone <repository-url>
+cd document-qa-bot
+```
+
+### Create Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+Activate virtual environment:
+
+Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Configure Gemini API Key
+
+Create a `.env` file:
+
+```env
+GEMINI_API_KEY=YOUR_API_KEY
+```
+
+### Run Document Ingestion
+
+```bash
+python ingest.py
+```
+
+### Run Query System
+
+```bash
+python query.py
+```
+
+### Launch Streamlit UI
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## 🧠 Workflow
+
+1. Load PDF document.
+2. Extract text from PDF.
+3. Split text into chunks.
+4. Store chunks in ChromaDB.
+5. Accept user question.
+6. Retrieve relevant chunks.
+7. Display answer through Streamlit interface.
+
+---
+
+## 📸 Sample Questions
+
+- What is cloud computing?
+- What is AWS?
+- What are the types of cloud services?
+- What is Amazon EC2?
+
+---
+
+## 🔮 Future Improvements
+
+- Integrate Gemini API for intelligent answer generation.
+- Add source citations.
+- Support multiple PDFs and DOCX files.
+- Add chat history.
+- Deploy application on Streamlit Cloud.
+
+---
+
+## 👩‍💻 Author
+
+AI Engineering Internship Project
