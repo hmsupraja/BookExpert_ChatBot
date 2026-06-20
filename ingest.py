@@ -35,9 +35,6 @@ except:
 collection = client.get_or_create_collection(
     name="documents"
 )
-collection = client.get_or_create_collection(
-    name="documents"
-)
 
 # Store chunks
 for idx, chunk in enumerate(chunks):
